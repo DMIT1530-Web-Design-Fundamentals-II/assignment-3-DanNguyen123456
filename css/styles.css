@@ -1,15 +1,20 @@
 :root {
     /** colours **/
-    --yellow:           #FED766; 
+    --yellow: #FED766;
     --lt-seafoam-green: #ecf9f6;
-    --seafoam-green:    #43C6AC;
-    --md-blue:          #191654;
-    --dk-blue:          #0C0B2A;
-    --blue-grey:        #6B717E;
+    --seafoam-green: #43C6AC;
+    --md-blue: #191654;
+    --dk-blue: #0C0B2A;
+    --blue-grey: #6B717E;
 
     /** typography **/
-    --headings:'Monoton', cursive;
+    --headings: 'Monoton', cursive;
     --body: 'Rubik', sans-serif;
+}
+
+p,
+a {
+    font-family: var(--body);
 }
 
 .sr-only {
@@ -19,4 +24,10 @@
     width: 0.1rem;
     height: 0.1rem;
     visibility: hidden;
+}
+
+/* HEADER */
+
+h1 {
+    font-family: var(--headings);
 }
