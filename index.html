@@ -19,13 +19,16 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- Scripts -->
+	<script src="js/main.js" defer></script>
 </head>
 
 <body>
 	<header>
 		<div class="inner-container wide-flex">
 			<div class="flex-container">
-				<a href="index.html"><img class="svg" src="/img/svg/creative-studio-logo.svg" alt="menu"></a>
+				<a href="index.html"><img class="logo" src="/img/svg/creative-studio-logo.svg" alt="menu"></a>
 				<div class="menu-icon">
 					<img class="svg" src="/img/svg/menu.svg" alt="menu">
 				</div>
@@ -58,13 +61,8 @@
 							CONTACT
 						</a>
 					</li>
-					<li>
-						<a href="#" class="first-link">
-							CONTACT
-						</a>
-					</li>
 					<li class="searchbar">
-						<input type="text" id="search" name="search">
+						<input type="text" id="search" name="search" placeholder="SEARCH">
 					</li>
 				</ul> <!-- end of .main-menu -->
 			</nav>
@@ -76,20 +74,21 @@
 		<section class="info">
 			<div class="scrim">
 				<div class="inner-container">
-					<h1>We are Creative Studio</h21>
-						<p>
-							We are a multi-disciplinary design, development, and digital marketing agency based in New
-							York and
-							Manhattan Beach. We specialize in creating experiences and engagements.
-						</p>
-						<div>
-							<a class="button" href="#">
-								<div>Let's work together!</div>
-							</a>
-							<a class="button" href="#">
-								<div>View our work</div>
-							</a>
-						</div>
+					<p><br><br><br><br></p>
+					<h1>We are Creative Studio</h1>
+					<p>
+						We are a multi-disciplinary design, development, and digital marketing agency based in New
+						York and
+						Manhattan Beach. We specialize in creating experiences and engagements.
+					</p>
+					<div class="info-buttons">
+						<a class="button" href="#">
+							<div>Let's work together!</div>
+						</a>
+						<a class="button" href="#">
+							<div>View our work</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -105,49 +104,50 @@
 				<!-- Card 1 -->
 				<div class="card">
 					<img src="img/scroll1.jpg" alt="user experience">
-					<a href="#" class="card-button">User Experience</a>
+					<p><a href="#" class="card-button">User Experience</a></p>
 				</div> <!-- end of .card -->
 
 				<!-- Card 2 -->
 				<div class="card">
 					<img src="img/scroll2.jpg" alt="web design">
-					<a href="#" class="card-button">Website Design & Development</a>
+					<p><a href="#" class="card-button">Website Design & Development</a></p>
 				</div> <!-- end of .card -->
 
 				<!-- Card 3 -->
 				<div class="card">
 					<img src="img/scroll3.jpg" alt="branding">
-					<a href="#" class="card-button">Branding</a>
+					<p><a href="#" class="card-button">Branding</a></p>
 				</div> <!-- end of .card -->
 
 				<!-- Card 4 -->
 				<div class="card">
 					<img src="img/scroll4.jpg" alt="app design">
-					<a href="#" class="card-button">App Design & Development</a>
+					<p><a href="#" class="card-button">App Design & Development</a></p>
 				</div> <!-- end of .card -->
-
+			</div>
+			<div class="scroll-wrapper">
 				<!-- Card 5 -->
 				<div class="card">
 					<img src="img/scroll5.jpg" alt="web design">
-					<a href="#" class="card-button">Web Design & Development</a>
+					<p><a href="#" class="card-button">Web Design & Development</a></p>
 				</div> <!-- end of .card -->
 
 				<!-- Card 6 -->
 				<div class="card">
 					<img src="img/scroll6.jpg" alt="branding - logo">
-					<a href="#" class="card-button">Branding - Logo</a>
+					<p><a href="#" class="card-button">Branding - Logo</a></p>
 				</div> <!-- end of .card -->
 
 				<!-- Card 7 -->
 				<div class="card">
 					<img src="img/scroll7.jpg" alt="digital marketing">
-					<a href="#" class="card-button">Digital Marketing</a>
+					<p><a href="#" class="card-button">Digital Marketing</a></p>
 				</div> <!-- end of .card -->
 
 				<!-- Card 8 -->
 				<div class="card">
 					<img src="img/scroll8.jpg" alt="ux & web design">
-					<a href="#" class="card-button">UX & Web Design</a>
+					<p><a href="#" class="card-button">UX & Web Design</a></p>
 				</div> <!-- end of .card -->
 			</div> <!-- end of .scroll-wrapper -->
 			<a class="button" href="#">
@@ -235,7 +235,7 @@
 		<div class="offices">
 			<div>
 				<h4>Our Offices</h4>
-				<div>
+				<div class="locations">
 					<div>
 						<p>
 							136 W 30th Street
@@ -272,8 +272,8 @@
 		<div class="news">
 			<h4>Subscribe to our newsletter</h4>
 			<div class="text">
-				<input type="text" id="email" name="email">
-				<a href="#" class="button">Subscribe Now!</a>
+				<input type="text" id="email" name="email" placeholder="EMAIL ADDRESS"">
+				<a href=" #" class="button">Subscribe Now!</a>
 			</div>
 			<p>
 				You may unsubscribe from our monthly newsletter at any time. Check out our Privacy Policy for more
@@ -281,7 +281,6 @@
 			</p>
 		</div>
 		<div class="disclaimer">
-			<p>Copyright 2022 | For educational purposes only | <a href="#">Privacy Policy</a></p>
 			<div class="svg-menu">
 				<div class="menu-icon">
 					<img class="svg" src="/img/svg/instagram-brands.svg" alt="Instagram">
@@ -293,6 +292,7 @@
 					<img class="svg" src="/img/svg/mailchimp-brands.svg" alt="Mailchimp">
 				</div>
 			</div>
+			<p>Copyright 2022 | For educational purposes only | <a href="#">Privacy Policy</a></p>
 		</div>
 	</footer>
 </body>

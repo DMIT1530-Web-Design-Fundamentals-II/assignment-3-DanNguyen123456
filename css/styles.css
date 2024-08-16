@@ -17,6 +17,18 @@ a {
     font-family: var(--body);
 }
 
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-container {
+    margin: auto;
+    max-width: 60rem;
+    padding: 1rem;
+}
+
 .sr-only {
     position: absolute;
     top: 0;
@@ -26,8 +38,383 @@ a {
     visibility: hidden;
 }
 
+.button {
+    background: var(--seafoam-green);
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: .3rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--md-blue);
+    font-size: 1.5rem;
+}
+
+.arrow {
+    max-width: 3rem;
+    padding-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h2 {
+    color: var(--md-blue);
+    font-size: 3rem;
+    font-weight: normal;
+    padding-top: 3rem;
+    border-bottom: .15rem solid var(--seafoam-green);
+    width: 80%;
+}
+
 /* HEADER */
 
-h1 {
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+header .inner-container {
+    padding: 0rem;
+}
+
+header .flex-container {
+    box-shadow: 0rem .1rem .5rem rgb(75, 75, 75);
+    padding: .5rem;
+}
+
+h1,
+h2 {
     font-family: var(--headings);
+}
+
+.logo {
+    min-width: 15rem;
+}
+
+.svg {
+    min-width: 5rem;
+}
+
+.topbar {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    text-align: left;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.show-nav {
+    max-height: unset;
+    opacity: 1;
+    transition: opacity 1s;
+    overflow: visible;
+}
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu li:not(.searchbar) {
+    border-bottom: .15rem solid var(--seafoam-green);
+    padding: 1rem;
+}
+
+.searchbar {
+    border-bottom: 0rem solid var(--seafoam-green);
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.searchbar input {
+    width: 100%;
+    border-radius: .8rem;
+    padding: .5rem 1rem .5rem 1rem;
+    font-family: var(--body);
+    font-size: 1.3rem;
+    font-weight: 100;
+    background-image: url('/img/svg/search-icon.svg');
+    background-size: 1.5rem;
+    background-position: .75rem .75rem;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+}
+
+.first-link {
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--dk-blue);
+}
+
+/* INFO SECTION */
+.info {
+    background: linear-gradient(60deg, rgba(25, 22, 84, 1) 0%, rgba(67, 197, 171, 1) 100%);
+}
+
+.info h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: normal;
+    padding-top: 4rem;
+}
+
+.info p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+}
+
+.info-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.info .button:nth-child(2) {
+    margin-bottom: 5rem;
+    background: transparent;
+    border: .2rem solid var(--seafoam-green);
+    color: var(--seafoam-green);
+}
+
+/*  HORIZONTAL SCROLL SECTION */
+
+.scroll {
+    background-color: white;
+}
+
+.scroll .inner-container p {
+    color: var(--md-blue);
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.card {
+    background-color: #ffffff;
+    flex: 0 0 20%;
+    min-width: 25rem;
+}
+
+.card p {
+    margin: 1rem 0rem 1rem 0rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 200;
+}
+
+.card:nth-child(odd) {
+    background-color: var(--md-blue);
+}
+
+.card:nth-child(even) {
+    background-color: var(--seafoam-green);
+}
+
+.card:nth-child(odd) a {
+    color: white;
+}
+
+.card:nth-child(even) a {
+    color: var(--dk-blue);
+}
+
+/* This is for webkit browsers only */
+.scroll-wrapper::-webkit-scrollbar {
+    background-color: white;
+    width: 0.5rem;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: white;
+}
+
+/* As of 2022, this is for Firefox only */
+
+.scroll-wrapper {
+    scrollbar-color: var(--yellow) white;
+    scrollbar-width: thin;
+}
+
+.scroll .button {
+    margin: 3rem 1rem 5rem 1rem;
+    background: transparent;
+    border: .2rem solid var(--md-blue);
+    color: var(--md-blue);
+}
+
+/* SERVICES */
+
+.services .button {
+    margin: 3rem 0rem 1rem 0rem;
+    background: transparent;
+    border: .2rem solid var(--md-blue);
+    color: var(--md-blue);
+}
+
+.services .inner-container p {
+    color: var(--md-blue);
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.service-cards {
+    padding: 1rem;
+}
+
+.service-card p {
+    color: var(--md-blue);
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.service-card img {
+    border-radius: 1rem;
+}
+
+.services h3 {
+    font-family: var(--body);
+    font-size: 2.5rem;
+    color: var(--seafoam-green);
+    font-weight: 100;
+    padding-top: 2rem;
+}
+
+/* WHO WE ARE SECTION */
+
+.whoweare {
+    background-color: var(--seafoam-green);
+}
+
+.whoweare img {
+    padding: 1rem;
+}
+
+h2 {
+    border-bottom: .1rem solid white;
+    width: 90%;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+
+.whoweare .button {
+    margin: 3rem 0rem 1rem 0rem;
+    background: transparent;
+    border: .2rem solid var(--md-blue);
+    color: var(--md-blue);
+    max-height: 5rem;
+}
+
+.whoweare .arrow {
+    min-width: 4rem;
+    padding: 0;
+}
+
+.whoweare p {
+    color: var(--md-blue);
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--md-blue);
+}
+
+.offices {
+    padding: 1rem;
+    color: white;
+}
+
+h4 {
+    font-family: var(--headings);
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-top: 4rem;
+}
+
+.locations {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+.news h4 {
+    padding-bottom: 2rem;
+}
+
+.news {
+    padding: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.news p {
+    font-weight: 100;
+}
+
+.text input {
+    width: 100%;
+    min-height: 4rem;
+    font-family: var(--body);
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: var(--dk-blue);
+}
+
+.text {
+    margin-bottom: 3rem;
+}
+
+.disclaimer {
+    padding: 1rem;
+    background-color: var(--dk-blue);
+    color: white;
+}
+
+footer .svg {
+    filter: invert(100%);
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+footer a {
+    color: white;
+}
+
+.disclaimer p {
+    font-weight: 100;
+    padding-top: 1rem;
+}
+
+.svg-menu {
+    display: flex;
 }
