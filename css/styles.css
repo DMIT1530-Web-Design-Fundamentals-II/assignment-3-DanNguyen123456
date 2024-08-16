@@ -641,119 +641,165 @@ textarea {
         justify-content: space-between;
     }
 
-    /* LARGEST VIEW */
-    @media screen and (min-width: 1192px) {
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-        .topbar {
-            display: flex;
-            justify-content: flex-start;
-            position: static;
-            overflow: visible;
-            opacity: 1;
-        }
+    .main div {
+        width: 49%;
+    }
 
-        .show-nav {
-            max-height: 0;
-        }
+    .budget-field {
+        width: 70%;
+    }
 
-        header .menu-icon {
-            display: none;
-        }
+    .submit-button {
+        width: 60%;
+    }
 
-        .main-menu {
-            display: flex;
-            justify-content: flex-end;
-            margin: 0;
-            position: absolute;
-            top: 0rem;
-            right: 1rem;
-        }
+    .contact-us {
+        text-align: center;
+    }
+}
 
-        .first-link {
-            display: flex;
-        }
+/* LARGEST VIEW */
+@media screen and (min-width: 1192px) {
 
-        .main-menu li:not(.searchbar) {
-            border-bottom: 0rem;
-        }
+    .topbar {
+        display: flex;
+        justify-content: flex-start;
+        position: static;
+        overflow: visible;
+        opacity: 1;
+    }
 
-        .topbar .second-tier {
-            min-width: 100%;
-            margin: 0;
-            visibility: hidden;
-            display: inline-block;
-            text-align: center;
-        }
+    .show-nav {
+        max-height: 0;
+    }
 
-        .first-link {
-            font-size: 1.2rem;
-            padding-top: .8rem;
-        }
+    header .menu-icon {
+        display: none;
+    }
 
-        .whoweare {
-            display: flex;
-            flex-direction: row-reverse;
-            padding-top: 10rem;
-        }
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        position: absolute;
+        top: 0rem;
+        right: 1rem;
+    }
 
-        .whoweare h2 {
-            width: 80%;
-        }
+    .first-link {
+        display: flex;
+    }
 
-        .whoweare .button {
-            min-width: 30rem;
-        }
+    .main-menu li:not(.searchbar) {
+        border-bottom: 0rem;
+    }
 
-        .whoweare img {
-            width: 70%;
-            height: 70%;
-        }
+    .topbar .second-tier {
+        min-width: 100%;
+        margin: 0;
+        visibility: hidden;
+        display: inline-block;
+        text-align: center;
+    }
 
-        .whoweare .arrow {
-            max-width: 2rem;
-            min-width: 2rem;
-        }
+    .first-link {
+        font-size: 1.2rem;
+        padding-top: .8rem;
+    }
 
-        .locations {
-            display: inline;
-            width: 80%;
-        }
+    .whoweare {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 10rem;
+    }
 
-        .footer {
-            display: flex;
-            justify-content: space-between;
-        }
+    .whoweare h2 {
+        width: 80%;
+    }
 
-        .news {
-            width: 40%;
-        }
+    .whoweare .button {
+        min-width: 30rem;
+    }
 
-        .scroll {
-            padding-left: 4rem;
-            padding-right: 4rem;
-        }
+    .whoweare img {
+        width: 70%;
+        height: 70%;
+    }
 
-        .scroll .button {
-            width: 30%;
-        }
+    .whoweare .arrow {
+        max-width: 2rem;
+        min-width: 2rem;
+    }
 
-        .scroll-wrapper {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            margin: auto;
-        }
+    .locations {
+        display: inline;
+        width: 80%;
+    }
 
-        .services {
-            display: flex;
-            padding-left: 4rem;
-            padding-right: 4rem;
-        }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
 
-        .service-cards {
-            width: 70%;
-            display: flex;
-            flex-wrap: wrap;
-        }
+    .news {
+        width: 40%;
+    }
+
+    .scroll {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .scroll .button {
+        width: 30%;
+    }
+
+    .scroll-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: auto;
+    }
+
+    .services {
+        display: flex;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .service-cards {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .form {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .contact .inner-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1280px;
+    }
+
+    .help {
+        width: 80%;
+    }
+
+    .parallax {
+        margin-left: auto;
     }
 }

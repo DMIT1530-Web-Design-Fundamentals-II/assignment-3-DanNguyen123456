@@ -75,7 +75,7 @@
 			<div class="scrim">
 				<div class="inner-container">
 					<p><br><br><br><br></p>
-					<h1>Contact Us</h1>
+					<h1 class="contact-us">Contact Us</h1>
 					<p><br><br><br><br></p>
 				</div>
 			</div>
@@ -85,14 +85,17 @@
 		<section class="contact">
 			<div class="scrim">
 				<div class="inner-container">
-					<h2>How can we help today?</h2>
-					<p>
-						Looking to start a new project or just to chat? Send us an email, give us a call or fill out the
-						form below with your details and we will be happy to discuss your ideas.
-					</p>
-					<h3>Email us. Say Hello!</h3>
-					<h5>hello@creativestudio.com</h5>
-					<h3>Visit or Call</h3>
+					<div class="help">
+						<h2>How can we help today?</h2>
+						<p>
+							Looking to start a new project or just to chat? Send us an email, give us a call or fill out
+							the
+							form below with your details and we will be happy to discuss your ideas.
+						</p>
+						<h3>Email us. Say Hello!</h3>
+						<h5>hello@creativestudio.com</h5>
+						<h3>Visit or Call</h3>
+					</div>
 					<div class="locations">
 						<div>
 							<h6>New York Office</h6>
@@ -130,11 +133,11 @@
 		<section class="parallax">
 			<div class="scrim">
 				<div class="inner-container">
-					<h2>Have a project you want to get started?.</h3>
-						<p>
-							Please submit your project details for a free consultation call and proposal. We review
-							every inquiry and respond promptly. You may also send us a quick note.
-						</p>
+					<h2>Have a project you want to get started?.</h2>
+					<p>
+						Please submit your project details for a free consultation call and proposal. We review
+						every inquiry and respond promptly. You may also send us a quick note.
+					</p>
 				</div>
 			</div>
 		</section>
@@ -145,7 +148,7 @@
 				<h3>Tell us about you?</h3>
 			</div>
 			<form id="form">
-				<fieldset>
+				<fieldset class="main">
 					<div>
 						<label for="name">Full Name</label>
 						<input type="text" required id="name">
@@ -163,8 +166,8 @@
 						<input type="text" id="city">
 					</div>
 					<div>
-						<label for="email">Email Address</label>
-						<input type="text" required id="email">
+						<label for="email-address">Email Address</label>
+						<input type="text" required id="email-address">
 					</div>
 					<div>
 						<label for="web">Website (Optional)</label>
@@ -174,8 +177,8 @@
 				<div class="head">
 					<h3>What is your budget?</h3>
 				</div>
-				<fieldset>
-					<select required id="budget">
+				<fieldset class="budget-field">
+					<select id="budget">
 						<option value="10K">$10K - 14K</option>
 						<option value="5K">$5K - 10K</option>
 					</select>
@@ -240,8 +243,8 @@
 			<div class="news">
 				<h4>Subscribe to our newsletter</h4>
 				<div class="text">
-					<input type="text" id="email" name="email" placeholder="EMAIL ADDRESS"">
-				<a href=" #" class="button">Subscribe Now!</a>
+					<input type="text" id="email" name="email" placeholder="EMAIL ADDRESS">
+					<a href=" #" class="button">Subscribe Now!</a>
 				</div>
 				<p>
 					You may unsubscribe from our monthly newsletter at any time. Check out our Privacy Policy for more
