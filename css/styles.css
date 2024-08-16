@@ -53,6 +53,10 @@ a {
     font-size: 1.5rem;
 }
 
+.button:hover {
+    background: white;
+}
+
 .arrow {
     max-width: 3rem;
     padding-left: 1rem;
@@ -189,6 +193,12 @@ h2 {
     color: var(--seafoam-green);
 }
 
+.info .button:nth-child(2):hover {
+    background: var(--seafoam-green);
+    color: white;
+}
+
+
 /*  HORIZONTAL SCROLL SECTION */
 
 .scroll {
@@ -264,6 +274,11 @@ h2 {
     color: var(--md-blue);
 }
 
+.scroll .button:hover {
+    background: var(--md-blue);
+    color: white;
+}
+
 /* SERVICES */
 
 .services .button {
@@ -271,6 +286,11 @@ h2 {
     background: transparent;
     border: .2rem solid var(--md-blue);
     color: var(--md-blue);
+}
+
+.services .button:hover {
+    background: var(--md-blue);
+    color: white;
 }
 
 .services .inner-container p {
@@ -329,6 +349,12 @@ h2 {
     color: var(--md-blue);
     max-height: 5rem;
 }
+
+.whoweare .button:hover {
+    background: var(--md-blue);
+    color: white;
+}
+
 
 .whoweare .arrow {
     min-width: 4rem;
