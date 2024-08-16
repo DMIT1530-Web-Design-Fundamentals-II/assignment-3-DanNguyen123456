@@ -132,7 +132,7 @@ h2 {
 }
 
 .searchbar {
-    border-bottom: 0rem solid var(--seafoam-green);
+    border-bottom: 0rem;
     margin-bottom: 3rem;
     padding: 1rem;
 }
@@ -523,5 +523,121 @@ footer a {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    /* LARGEST VIEW */
+    @media screen and (min-width: 1192px) {
+
+        .topbar {
+            display: flex;
+            justify-content: flex-start;
+            position: static;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        .show-nav {
+            max-height: 0;
+        }
+
+        header .menu-icon {
+            display: none;
+        }
+
+        .main-menu {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            position: absolute;
+            top: 0rem;
+            right: 1rem;
+        }
+
+        .first-link {
+            display: flex;
+        }
+
+        .main-menu li:not(.searchbar) {
+            border-bottom: 0rem;
+        }
+
+        .topbar .second-tier {
+            min-width: 100%;
+            margin: 0;
+            visibility: hidden;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .first-link {
+            font-size: 1.2rem;
+            padding-top: .8rem;
+        }
+
+        .whoweare {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-top: 10rem;
+        }
+
+        .whoweare h2 {
+            width: 80%;
+        }
+
+        .whoweare .button {
+            min-width: 30rem;
+        }
+
+        .whoweare img {
+            width: 70%;
+            height: 70%;
+        }
+
+        .whoweare .arrow {
+            max-width: 2rem;
+            min-width: 2rem;
+        }
+
+        .locations {
+            display: inline;
+            width: 80%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .news {
+            width: 40%;
+        }
+
+        .scroll {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        .scroll .button {
+            width: 30%;
+        }
+
+        .scroll-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            margin: auto;
+        }
+
+        .services {
+            display: flex;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        .service-cards {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
