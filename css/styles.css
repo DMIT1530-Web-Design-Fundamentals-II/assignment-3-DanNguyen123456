@@ -315,7 +315,7 @@ h2 {
     padding: 1rem;
 }
 
-h2 {
+.whoweare h2 {
     border-bottom: .1rem solid white;
     width: 90%;
     margin-bottom: 2rem;
@@ -417,4 +417,111 @@ footer a {
 
 .svg-menu {
     display: flex;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 720px) {
+    header .inner-container {
+        margin: auto;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .info-buttons {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    .info-buttons .button {
+        max-height: 4rem;
+    }
+
+    .info-buttons .button:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .scroll h2 {
+        width: 40%;
+    }
+
+    .scroll .button {
+        max-width: 60%;
+        margin-left: auto;
+    }
+
+    .services h2 {
+        width: 50%;
+    }
+
+    .services .button {
+        max-width: 60%;
+    }
+
+    .service-cards {
+        padding: 3rem;
+        margin-bottom: 10rem;
+    }
+
+    .service-card {
+        display: flex;
+        margin-bottom: 4rem;
+    }
+
+    .service-card img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .service-card div {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        max-height: 5rem;
+    }
+
+    .whoweare h2 {
+        width: 55%;
+        margin: 0;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .whoweare .button {
+        max-width: 60%;
+        margin-bottom: 8rem;
+    }
+
+    .whoweare img {
+        width: 100%;
+    }
+
+    .locations {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .text {
+        display: flex;
+        max-height: 3rem;
+    }
+
+    .text input {
+        width: 100%;
+        min-height: 1rem;
+    }
+
+    .text .button {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        border-radius: 0rem;
+    }
+
+    .disclaimer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
