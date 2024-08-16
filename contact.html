@@ -1,26 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Totally Semantic Title</title>
 
-		<!-- Meta Information -->
-		<meta name="author" content=" ">
-		<meta name="description" content=" ">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Totally Semantic Title</title>
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- Meta Information -->
+	<meta name="author" content=" ">
+	<meta name="description" content=" ">
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
-		<div class="container">
-			<h1>Hello, world!</h1>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- Scripts -->
+	<script src="js/main.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner-container wide-flex">
+			<div class="flex-container">
+				<a href="index.html"><img class="logo" src="/img/svg/creative-studio-logo.svg" alt="menu"></a>
+				<div class="menu-icon">
+					<img class="svg" src="/img/svg/menu.svg" alt="menu">
+				</div>
+			</div>
+			<nav class="topbar wide-flex">
+				<h3 class="sr-only">Main Menu</h3>
+				<ul class="main-menu">
+					<li>
+						<a href="#" class="first-link">
+							SERVICES
+						</a>
+					</li>
+					<li>
+						<a href="#" class="first-link">
+							OUR WORK
+						</a>
+					</li>
+					<li>
+						<a href="#" class="first-link">
+							ABOUT US
+						</a>
+					</li>
+					<li>
+						<a href="#" class="first-link">
+							BLOG
+						</a>
+					</li>
+					<li>
+						<a href="#" class="first-link">
+							CONTACT
+						</a>
+					</li>
+					<li class="searchbar">
+						<input type="text" id="search" name="search" placeholder="SEARCH">
+					</li>
+				</ul> <!-- end of .main-menu -->
+			</nav>
 		</div>
-	</body>
+	</header>
+
+	<main>
+		<!-- Info Section -->
+		<section class="info">
+			<div class="scrim">
+				<div class="inner-container">
+					<p><br><br><br><br></p>
+					<h1>Contact Us</h1>
+					<p><br><br><br><br></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Info Section -->
+		<section class="contact">
+			<div class="scrim">
+				<div class="inner-container">
+					<h2>How can we help today?</h2>
+					<p>
+						Looking to start a new project or just to chat? Send us an email, give us a call or fill out the
+						form below with your details and we will be happy to discuss your ideas.
+					</p>
+					<h3>Email us. Say Hello!</h3>
+					<h5>hello@creativestudio.com</h5>
+					<h3>Visit or Call</h3>
+					<div class="locations">
+						<div>
+							<h6>New York Office</h6>
+							<p>
+								136 W 30th Street
+								<br>
+								New York, NY 10038
+								<br><br>
+
+								(310) 570 - 4482
+								<br><br>
+
+								Mon - Fri 9am - 5pm
+							</p>
+						</div>
+						<div>
+							<h6>Manhattan Beach Office</h6>
+							<p>
+								1800 Larsson Street
+								<br>
+								Manhattan Beach, CA 90266
+								<br><br>
+
+								(424) 223 - 3767
+								<br><br>
+
+								Mon - Fri 8:30am - 4:30pm
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Parallax Section -->
+		<section class="parallax">
+			<div class="scrim">
+				<div class="inner-container">
+					<h2>Have a project you want to get started?.</h3>
+						<p>
+							Please submit your project details for a free consultation call and proposal. We review
+							every inquiry and respond promptly. You may also send us a quick note.
+						</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Form Section -->
+		<section class="form">
+			<div class="head">
+				<h3>Tell us about you?</h3>
+			</div>
+			<form id="form">
+				<fieldset>
+					<div>
+						<label for="name">Full Name</label>
+						<input type="text" required id="name">
+					</div>
+					<div>
+						<label for="org">Company / Organization</label>
+						<input type="text" required id="org">
+					</div>
+					<div>
+						<label for="phone">Phone Number</label>
+						<input type="number" required id="phone">
+					</div>
+					<div>
+						<label for="city">City / Location (Optional)</label>
+						<input type="text" id="city">
+					</div>
+					<div>
+						<label for="email">Email Address</label>
+						<input type="text" required id="email">
+					</div>
+					<div>
+						<label for="web">Website (Optional)</label>
+						<input type="text" id="web">
+					</div>
+				</fieldset>
+				<div class="head">
+					<h3>What is your budget?</h3>
+				</div>
+				<fieldset>
+					<select required id="budget">
+						<option value="10K">$10K - 14K</option>
+						<option value="5K">$5K - 10K</option>
+					</select>
+				</fieldset>
+				<div class="head">
+					<h3>Tell us about your project</h3>
+					<p>*Be specific</p>
+				</div>
+				<fieldset>
+					<div class="project">
+						<textarea rows="10" cols="50" placeholder="In 350 words or less." name="project"></textarea>
+					</div>
+				</fieldset>
+
+				<a class="submit-button button" href="#">
+					<div>Send Us your Project</div>
+					<img class="arrow" src="img/svg/right-arrow.svg" alt="arrow">
+				</a>
+
+			</form>
+		</section>
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="offices">
+				<div>
+					<h4>Our Offices</h4>
+					<div class="locations">
+						<div>
+							<p>
+								136 W 30th Street
+								<br>
+								New York, NY 10038
+								<br><br>
+
+								(310) 570 - 4482
+								<br><br>
+
+								Mon - Fri 9am - 5pm
+							</p>
+						</div>
+						<div>
+							<p>
+								1800 Larsson Street
+								<br>
+								Manhattan Beach, CA 90266
+								<br><br>
+
+								(424) 223 - 3767
+								<br><br>
+
+								Mon - Fri 8:30am - 4:30pm
+							</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<p>Email us, say hello!</p>
+					<p>hello@creativestudio.com</p>
+				</div>
+			</div>
+			<div class="news">
+				<h4>Subscribe to our newsletter</h4>
+				<div class="text">
+					<input type="text" id="email" name="email" placeholder="EMAIL ADDRESS"">
+				<a href=" #" class="button">Subscribe Now!</a>
+				</div>
+				<p>
+					You may unsubscribe from our monthly newsletter at any time. Check out our Privacy Policy for more
+					information on how we store and protect your data.
+				</p>
+			</div>
+		</div>
+		<div class="disclaimer">
+			<div class="svg-menu">
+				<div class="menu-icon">
+					<img class="svg" src="/img/svg/instagram-brands.svg" alt="Instagram">
+				</div>
+				<div class="menu-icon">
+					<img class="svg" src="/img/svg/facebook-f-brands.svg" alt="Instagram">
+				</div>
+				<div class="menu-icon">
+					<img class="svg" src="/img/svg/mailchimp-brands.svg" alt="Mailchimp">
+				</div>
+			</div>
+			<p>Copyright 2022 | For educational purposes only | <a href="#">Privacy Policy</a></p>
+		</div>
+	</footer>
+</body>
+
 </html>
